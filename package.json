@@ -43,7 +43,6 @@
     "react-hot-toast": "^2.4.1",
     "react-hotkeys-hook": "^4.5.1",
     "react-markdown": "^8.0.7",
-    "react-native": "^0.75.2",
     "react-reader": "^1.2.2",
     "react-syntax-highlighter": "^15.5.0",
     "redaxios": "^0.5.1",
@@ -54,6 +53,7 @@
     "swr": "^2.2.5",
     "use-clipboard-copy": "^0.2.0",
     "use-constant": "^1.1.1",
+    "use-media": "^1.5.0",
     "vercel": "^37.4.0",
     "wrangler": "^3.75.0"
   },

@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { useColorScheme } from 'react-native'
+import { useMedia } from 'use-media';
 import { useRouter } from 'next/router'
 
 import { LightAsync as SyntaxHighlighter } from 'react-syntax-highlighter'
@@ -16,7 +16,8 @@ const CodePreview: FC<{ file: any }> = ({ file }) => {
   const { asPath } = useRouter()
   const { response: content, error, validating } = useFileContent(`/api/raw?path=${asPath}`, asPath)
 
-  const theme = useColorScheme();
+  const themeBoolean = useMedia('(prefers-color-scheme: dark)');
+  const theme = themeBoolean ? 'dark' : 'light';
 
   if (error) {
     return (
