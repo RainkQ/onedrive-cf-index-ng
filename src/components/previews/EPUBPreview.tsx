@@ -46,10 +46,10 @@ const EPUBPreview: FC<{ file: OdFileObject }> = ({ file }) => {
       >
         <div className="no-scrollbar w-full flex-1 overflow-scroll" ref={epubContainer} style={{ minHeight: '70vh' }}>
           <div
+            className="mx-auto"
             style={{
-              position: 'absolute',
               width: epubContainerWidth,
-              height: '100vh',
+              height: '70vh',
             }}
           >
             <ReactReader
