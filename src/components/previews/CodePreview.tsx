@@ -16,7 +16,7 @@ const CodePreview: FC<{ file: any }> = ({ file }) => {
   const { asPath } = useRouter()
   const { response: content, error, validating } = useFileContent(`/api/raw?path=${asPath}`, asPath)
 
-  const { theme } = useColorScheme();
+  const theme = useColorScheme();
 
   if (error) {
     return (
