@@ -49,7 +49,7 @@ const EPUBPreview: FC<{ file: OdFileObject }> = ({ file }) => {
             style={{
               position: 'absolute',
               width: epubContainerWidth,
-              height: '70vh',
+              height: '100vh',
             }}
           >
             <ReactReader
