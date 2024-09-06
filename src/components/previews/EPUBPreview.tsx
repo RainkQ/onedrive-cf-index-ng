@@ -59,7 +59,10 @@ const EPUBPreview: FC<{ file: OdFileObject }> = ({ file }) => {
               location={location}
               locationChanged={onLocationChange}
               epubInitOptions={{ openAs: 'epub' }}
-              epubOptions={{ flow: 'scrolled', allowPopups: true }}
+              epubOptions={{
+                // flow: 'scrolled', 
+                allowPopups: true 
+              }}
             />
           </div>
         </div>
